@@ -9,7 +9,7 @@ pipeline {
     stage('Start') {
       steps {
         sh 'echo passed'
-        //git branch: 'main', url: 'git@github.com:balaji-510/jenkin-pipeline.git'
+        git branch: 'main', url: 'git@github.com:balaji-510/jenkin-pipeline.git'
       }
     }
     stage('Build and Test') {
